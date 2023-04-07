@@ -4,7 +4,7 @@
 
 ![Teaser image](./demo.png)
 
-# 操作手順
+# 操作手順([参考](https://docs.streamlit.io/knowledge-base/tutorials/deploy/docker))
 まず、このレポジトリを適当なディレクトリにクローンしてください
 ```bash
 git clone https://github.com/RyozoMasukawa/chatGPT_hotpepper.git
