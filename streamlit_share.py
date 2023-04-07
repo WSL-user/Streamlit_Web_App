@@ -7,8 +7,8 @@ URL = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/'
 #API_KEYは外部に漏らさないで(おなげえしやす)
 #TODO　自分のAPIキーに変更してください
 
-API_KEY = 'YOUR HOTPEPPER API'
-openai.api_key='YOUR CHATGPT API'
+API_KEY = 'YOUR HOTPEPPER API KEY'
+openai.api_key='YOUR CHATGPT API KEY'
 model_engine = "text-davinci-003"
 
 
@@ -42,7 +42,7 @@ def ChatGPT(user_query):
     response = completion.choices[0].text
     return response
 
-#ホットペッパーグルメに聞く関数
+#ホットペッパーグルメから情報を得る関数
 def ask_hotpepper(keyword, count=100):
     #https://webservice.recruit.co.jp/doc/hotpepper/reference.htmlを参照
     body = {
@@ -55,6 +55,7 @@ def ask_hotpepper(keyword, count=100):
     response = requests.get(URL,body)
     return response
 
+#ホットペッパーグルメのレスポンスからChatGPTに聞くプロンプトをテンプレートベースで生成する関数
 def make_prompt_list(response):
     prompts = {}
 
@@ -76,6 +77,7 @@ def make_prompt_list(response):
         prompts[shop_name] = prompt
     return prompts
 
+#メイン
 def main():
     st.title("ホットペッパーグルメ宣伝文生成器")
     st.sidebar.header("使い方")
