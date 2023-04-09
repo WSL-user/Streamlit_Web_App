@@ -88,7 +88,7 @@ def main():
       )
     user_query = st.text_input("飲食店の検索キーワードを入力(例:「池袋　インドカレー」)", "東京　飲食店")
 
-    prompt_dict = make_prompt_list(ask_hotpepper(user_query, 100))
+    prompt_dict = make_prompt_list(ask_hotpepper(user_query.replace('　', ' '), 100))
     print(prompt_dict)
 
     shop_name = random.choice(list(prompt_dict.keys()))
