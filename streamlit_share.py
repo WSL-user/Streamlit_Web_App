@@ -3,7 +3,6 @@ import openai
 import streamlit as st
 import random
 
-
 URL = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/'
 #API_KEYは外部に漏らさないで(おなげえしやす)
 #TODO　自分のAPIキーに変更してください
