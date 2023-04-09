@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # chatGPT_hotpepper
 
 下の画像みたいに検索キーワードからchatGPTで生成するアプリ
@@ -26,3 +27,6 @@ docker build -t [好きな名前] .
 ```bash
 docker run -p [決めたポート番号]:[決めたポート番号] streamlit
 ```
+=======
+# Streamlit_Web_App
+>>>>>>> origin/main
