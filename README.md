@@ -3,6 +3,8 @@
 
 下の画像みたいに検索キーワードからchatGPTで生成するアプリ
 
+hello world
+
 ![Teaser image](./demo.png)
 
 # 操作手順([参考](https://docs.streamlit.io/knowledge-base/tutorials/deploy/docker))
