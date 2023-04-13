@@ -27,6 +27,8 @@ docker build -t [好きな名前] .
 ```bash
 docker run -p [決めたポート番号]:[決めたポート番号] streamlit
 ```
+
+aoba check
 =======
 # Streamlit_Web_App
 >>>>>>> origin/main
